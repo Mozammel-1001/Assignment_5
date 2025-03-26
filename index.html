@@ -57,7 +57,11 @@
                 </div>
                 <div class="flex items-center gap-2 bg-[#F4F7FF] px-5 py-3 rounded-xl">
                     <div class="rounded-full p-3 bg-white"><img src="assets/calender.png" alt=""></div>
-                    <p class="text-[#00303C]" id="date-time">Hi</p>
+                    <div>
+                        <span id="day" class="text-[#00303C]"></span>
+                        <span class="text-[#00303C]"> ,</span>
+                        <p id="date" class="font-bold text-[#00303C]"></p>
+                    </div>
                 </div>
             </div>
             <hr class="border-dashed" style="border-color: rgba(55, 82, 253, 0.2)">
@@ -86,11 +90,11 @@
                     <h3 class="font-medium text-xl text-[#00303C] mt-4" id="task-2">Add Dark Mode</h3>
                     <p class="rounded-lg border-none bg-white p-4 text-black text-opacity-50 mt-4">Store the user's
                         preference in localStorage, update CSS variables dynamically, and apply a smooth transition
-                        effect.</p>
-                    <div class="mt-10 flex justify-between">
+                        effect. Verify readability and contrast.</p>
+                    <div class="mt-4 flex justify-between">
                         <div>
                             <p class="text-[#00303C] text-opacity-70 text-sm">Deadline</p>
-                            <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            <p class="text-[#00303C] font-medium">28 March 2025</p>
                         </div>
                         <button class="text-white bg-[#3752FD] rounded-lg px-4 py-2 font-medium"
                             id="complete-btn-2">Completed</button>
@@ -107,7 +111,7 @@
                     <div class="mt-4 flex justify-between">
                         <div>
                             <p class="text-[#00303C] text-opacity-70 text-sm">Deadline</p>
-                            <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            <p class="text-[#00303C] font-medium">04 April 2025</p>
                         </div>
                         <button class="text-white bg-[#3752FD] rounded-lg px-4 py-2 font-medium"
                             id="complete-btn-3">Completed</button>
@@ -121,13 +125,11 @@
                 <div class="bg-[#F4F7FF] p-5 rounded-2xl flex-1">
                     <button class="px-4 py-2 bg-white rounded-lg text-[#00303C] text-opacity-80">Meta</button>
                     <h3 class="font-medium text-xl text-[#00303C] mt-4" id="task-4">Add new emoji &#129330;</h3>
-                    <p class="rounded-lg border-none bg-white p-4 text-black text-opacity-50 mt-4">Debug using Chrome
-                        DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                    <p class="rounded-lg border-none bg-white p-4 text-black text-opacity-50 mt-4">Brainstorm ideas for the new emoji based on user needs, trends, or gaps in the current emoji set. Ensure the emoji is scalable and clear.</p>
                     <div class="mt-4 flex justify-between">
                         <div>
                             <p class="text-[#00303C] text-opacity-70 text-sm">Deadline</p>
-                            <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            <p class="text-[#00303C] font-medium">11 April 2025</p>
                         </div>
                         <button class="text-white bg-[#3752FD] rounded-lg px-4 py-2 font-medium"
                             id="complete-btn-4">Completed</button>
@@ -138,13 +140,12 @@
                 <div class="bg-[#F4F7FF] p-5 rounded-2xl flex-1">
                     <button class="px-4 py-2 bg-white rounded-lg text-[#00303C] text-opacity-80">Google LLC</button>
                     <h3 class="font-medium text-xl text-[#00303C] mt-4" id="task-5">Integrate OpenAI API</h3>
-                    <p class="rounded-lg border-none bg-white p-4 text-black text-opacity-50 mt-4">Debug using Chrome
-                        DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                    <p class="rounded-lg border-none bg-white p-4 text-black text-opacity-50 mt-4">Integrate the OpenAI
+                        API into a web application to enable chatbot functionality, text & image generation proper API authentication.</p>
                     <div class="mt-4 flex justify-between">
                         <div>
                             <p class="text-[#00303C] text-opacity-70 text-sm">Deadline</p>
-                            <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            <p class="text-[#00303C] font-medium">18 April 2025</p>
                         </div>
                         <button class="text-white bg-[#3752FD] rounded-lg px-4 py-2 font-medium"
                             id="complete-btn-5">Completed</button>
@@ -155,13 +156,11 @@
                 <div class="bg-[#F4F7FF] p-5 rounded-2xl flex-1">
                     <button class="px-4 py-2 bg-white rounded-lg text-[#00303C] text-opacity-80">Glassdoor</button>
                     <h3 class="font-medium text-xl text-[#00303C] mt-4" id="task-6">Improve Job searching</h3>
-                    <p class="rounded-lg border-none bg-white p-4 text-black text-opacity-50 mt-4">Debug using Chrome
-                        DevTools, check for overlapping elements, and ensure onClick works properly
-                        and ensure onClick works properly</p>
+                    <p class="rounded-lg border-none bg-white p-4 text-black text-opacity-50 mt-4">Enhance the job search functionality to make it faster, more intuitive, and personalized, helping users find relevant job opportunities efficiently.</p>
                     <div class="mt-4 flex justify-between">
                         <div>
                             <p class="text-[#00303C] text-opacity-70 text-sm">Deadline</p>
-                            <p class="text-[#00303C] font-medium">21 March 2025</p>
+                            <p class="text-[#00303C] font-medium">25 April 2025</p>
                         </div>
                         <button class="text-white bg-[#3752FD] rounded-lg px-4 py-2 font-medium"
                             id="complete-btn-6">Completed</button>
@@ -178,7 +177,8 @@
                 <p>Activity Log</p>
             </div>
             <div class="flex justify-center">
-                <button class="bg-[#3752FD] rounded-lg px-5 py-2 text-white mt-4 text-center mb-4" id="history-btn">Clear
+                <button class="bg-[#3752FD] rounded-lg px-5 py-2 text-white mt-4 text-center mb-4"
+                    id="history-btn">Clear
                     History</button>
             </div>
             <hr class="border-dashed" style="border-color: rgba(55, 82, 253, 0.2)">

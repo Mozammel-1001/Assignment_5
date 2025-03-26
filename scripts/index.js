@@ -35,7 +35,7 @@ document.getElementById('complete-btn-6').addEventListener('click', function () 
 });
 
 function completeBtn(id) {
-    alert();
+    alert("Board Updated Successfully");
     const btnComplete = document.getElementById(id);
     btnComplete.setAttribute('disabled', true);
     btnComplete.style.backgroundColor = `rgba(55, 82, 253, 0.2)`;
@@ -46,7 +46,7 @@ function completeBtn(id) {
     const convertedAllTask = parseInt(allTask);
 
     const sum1 = convertedTask - 1;
-    const sum2 = convertedAllTask - 1;
+    const sum2 = convertedAllTask + 1;
     document.getElementById('task').innerText = sum1;
     document.getElementById('all-task').innerText = sum2;
 
@@ -54,7 +54,7 @@ function completeBtn(id) {
 
     count++;
     if (count === 6) {
-        alert();
+        alert("Congrats!!! You have completed all the current tasks");
     }
 }
 
@@ -62,10 +62,18 @@ function history(id) {
     const historyBox = document.getElementById('history-box');
     const taskName = document.getElementById(id).innerText;
     const p = document.createElement('p');
+
+    const realTime = new Date();
+    const submitTime = realTime.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    });
+
     p.classList.add("text-black", "text-opacity-70");
     p.classList.add("mt-6", "bg-[#F4F7FF]");
     p.classList.add("rounded-lg", "p-2");
-    p.innerText = `You have Completed The Task ${taskName} at 12:48:15 PM`;
+    p.innerText = `You have Completed The Task ${taskName} at ${submitTime}`;
     historyBox.appendChild(p);
 }
 
@@ -77,4 +85,23 @@ document.getElementById('history-btn').addEventListener('click', function () {
 // Discover something new today
 document.getElementById('discover').addEventListener('click', function () {
     window.location.href = "./main.html";
+});
+
+// Date & Day
+window.addEventListener('DOMContentLoaded', function () {
+    const realTime = new Date();
+    const dayElement = document.getElementById('day');
+    const dateElement = document.getElementById('date');
+
+    dayElement.innerText = realTime.toLocaleDateString('en-US', {
+        weekday: 'short'
+    });
+
+    dateElement.innerText = realTime.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    setTimeout(updateClock, 1000);
 });
