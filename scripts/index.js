@@ -1,3 +1,4 @@
+// Background change button
 document.getElementById('bg-change-btn').addEventListener('click', function () {
     const red = Math.floor(Math.random() * 256);
     const green = Math.floor(Math.random() * 256);
@@ -67,3 +68,13 @@ function history(id) {
     p.innerText = `You have Completed The Task ${taskName} at 12:48:15 PM`;
     historyBox.appendChild(p);
 }
+
+// History button
+document.getElementById('history-btn').addEventListener('click', function () {
+    document.getElementById('history-box').replaceChildren();
+});
+
+// Discover something new today
+document.getElementById('discover').addEventListener('click', function () {
+    window.location.href = "./main.html";
+});

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="font-poppins bg-[#F4F7FF]">
+    <header>
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center w-10/12 mx-auto mt-12 bg-white p-6 rounded-2xl">
+            <div class="flex items-center gap-3">
+                <div><img src="assets/logo.png" alt="Logo"></div>
+                <a href="">
+                    <h3 class="text-3xl text-[#00303C]">Dev<span class="font-bold">Board</span></h3>
+                </a>
+            </div>
+            <button class="text-white bg-[#3752FD] rounded-lg px-4 py-2 font-medium" id="discover-btn">
+                Back to Desk</button>
+        </nav>
+    </header>
+
+    <main class="w-10/12 mx-auto mt-10">
+        <p class="font-bold text-center text-black text-2xl mb-7">Blogs</p>
+
+        <!-- Question-1 -->
+        <div class="bg-white p-5 rounded-xl">
+            <p class="font-bold text-lg mt-2 mb-5">Question-1: What are the different ways to select an element in the
+                DOM?</p>
+            <hr class="border-dotted" style="border-color: rgba(55, 82, 253, 0.2)">
+            <p class="text-opacity-80 mt-5">There are many ways to select an element in the DOM such that-
+                getElementsByClassName, getElementById, getElementsByTagName, querySelector, querySelectorAll,
+                getAttribute etc.</p>
+        </div>
+
+        <!-- Question-2 -->
+        <div class="bg-white p-5 rounded-xl mt-6">
+            <p class="font-bold text-lg mt-2 mb-5">Question-2: What is the difference between innerHTML, innerText, and
+                textContent ?</p>
+            <hr class="border-dotted" style="border-color: rgba(55, 82, 253, 0.2)">
+            <p class="text-opacity-80 mt-5">innerHTML: This property gets or sets the HTML content inside an element. It
+                includes the HTML tags inside the element. It doesn't include hidden elements.</p>
+            <p class="text-opacity-80 mt-5">innerText: This property gets or sets the visible text content of an
+                element. It also doesn't include hidden elements.</p>
+            <p class="text-opacity-80 mt-5">textContent: This property gets or sets the text content of an element. It
+                includes hidden elements.</p>
+        </div>
+
+        <!-- Question-3 -->
+        <div class="bg-white p-5 rounded-xl mt-6">
+            <p class="font-bold text-lg mt-2 mb-5">Question-3: What is event delegation in the DOM?</p>
+            <hr class="border-dotted" style="border-color: rgba(55, 82, 253, 0.2)">
+            <p class="text-opacity-80 mt-5">Event Delegation is a technique in JavaScript by using which one can attach
+                a single event listener to a parent element rather than individual child elements. This allows the event
+                listener to handle events for multiple child elements, even if they are dynamically added or removed
+                from the DOM.</p>
+        </div>
+
+        <!-- Question-4 -->
+        <div class="bg-white p-5 rounded-xl mt-6">
+            <p class="font-bold text-lg mt-2 mb-5">Question-4: What is event bubbling in the DOM?</p>
+            <hr class="border-dotted" style="border-color: rgba(55, 82, 253, 0.2)">
+            <p class="text-opacity-80 mt-5">Event bubbling is a concept in the DOM where an event that occurs on an
+                element bubbles up from the target element to its root in the DOM tree. This means that when an event is
+                triggered on an element, it is first captured by the target element, and then it bubbles up to the
+                parent elements, and so on, until it reaches the root of the document</p>
+        </div>
+
+        <!-- Question-5 -->
+        <div class="bg-white p-5 rounded-xl mt-6 mb-14">
+            <p class="font-bold text-lg mt-2 mb-5">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <hr class="border-dotted" style="border-color: rgba(55, 82, 253, 0.2)">
+            <p class="text-opacity-80 mt-5">In JavaScript, you can create, add, and remove elements dynamically using the DOM. An element can be added by using createElement() method. append() and appendChild() method allows to add an element. Finally remove() and removeChild() removes an element. There are many more methods to add and remove an element while these are the most commonly used methods.</p>
+        </div>
+    </main>
+
+    <!-- Script files -->
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
