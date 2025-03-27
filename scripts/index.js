@@ -102,6 +102,4 @@ window.addEventListener('DOMContentLoaded', function () {
         month: 'long',
         day: 'numeric'
     });
-
-    setTimeout(updateClock, 1000);
 });
